@@ -11,4 +11,8 @@ public class Task1Lab2 {
         double a = Double.parseDouble(args[0]);
         System.out.println(Math.signum(a));
     }
+
+    public int sum(int a, int b) {
+        return a + b;
+    }
 }
