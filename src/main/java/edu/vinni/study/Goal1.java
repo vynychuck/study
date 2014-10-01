@@ -21,8 +21,9 @@ public class Goal1 {                  // це завдання 1.4 (перша �
             c = c * 2;
         }
         else {
-            a = 3;
-            b = 4;
+            a += b;
+            b = a - b;
+            a -= b;
         }
         System.out.println("Esli A >= B >= C to A = " + a + " B = " + b + " C = " + c);
     }
