@@ -5,6 +5,9 @@ package edu.vinni.study;
  */
 public class Task6Lab1 {
     public static void main(String args[]) {
+        if (args.length > 2) {
+            throw new IllegalArgumentException("Input sources more than 2 ");
+        }
         double y;
         int a = 3;
         double x = 2;
