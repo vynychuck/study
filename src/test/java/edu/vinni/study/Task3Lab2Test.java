@@ -2,26 +2,19 @@ package edu.vinni.study;
 
 import org.junit.Test;
 
+import static edu.vinni.study.Task3Lab2.min;
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by serghii on 03.10.14.
  */
 public class Task3Lab2Test {
 
-    @Test    (expected = IllegalArgumentException.class)
-    public void testMainExceptionThrown() {
-        final String[] strings = new String[]{};
-        Task3Lab2.main(strings);
-    }
-
     @Test
     public void testMainRightPath() {
-        final String[] strings = new String[]{"2", "23", "14"};
-        Task3Lab2.main(strings);
-    }
+        assertEquals(10, min(10, 12, 23));
+        assertEquals(12, min(114, 12, 223));
+        assertEquals(-12, min(10, 12, -12));
 
-    @Test (expected = NumberFormatException.class)
-    public void testMainNumberFormatException(){
-        final String[] strings = new String[] {"3d", "5g", "6h"};
-        Task3Lab2.main(strings);
     }
 }
