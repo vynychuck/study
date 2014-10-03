@@ -10,7 +10,7 @@ public class TaskAnotherLab1 {    //task #10
         }
         double x = Double.parseDouble(args[0]), a = Double.parseDouble(args[1]);
         double y;
-        if (x != -2 && x != 0 && a != 0) {
+        if (x >= 4 && a != 0) {
             y = Math.sin(2 * Math.pow(x, 3)) / (x + 2) + Math.cos(x/2*a);
             System.out.println("Функція y = " + y);
         }
