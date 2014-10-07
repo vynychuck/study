@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
+import java.util.ArrayList;
 import java.util.TreeSet;
 
 /**
@@ -14,7 +15,7 @@ public class Task4Lab3Test {
 
     @Test
     public void testMainPath() {
-        TreeSet<Integer> hs = new TreeSet<Integer>();
+        ArrayList<Integer> hs = new ArrayList<Integer>();
         hs.add(21);
         hs.add(3);
         hs.add(7);
