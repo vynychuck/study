@@ -1,13 +1,14 @@
 package edu.vinni.study;
 
-import java.util.TreeSet;
+import java.util.ArrayList;
+
 
 /**
  * Created by serghii on 06.10.14.
  */
 public class Task5Lab3 {
-    public static TreeSet<Integer> showGeomtrProgr(int a, int b) {
-        TreeSet<Integer> ts = new TreeSet<Integer>();
+    public static ArrayList<Integer> showGeomtrProgr(int a, int b) {
+        ArrayList<Integer> ts = new ArrayList<Integer>();
         do {
             ts.add(a);
             a *= b;
