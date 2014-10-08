@@ -4,6 +4,7 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 public class Task6Lab3Test {
     @Test
     public void testMainPath(){
-        ArrayList<Integer> ts = new ArrayList<Integer>();
+        List<Integer> ts = new ArrayList<Integer>();
         for (int i = 3; i < 2000; i *= 2) {
             ts.add(i);
         }
