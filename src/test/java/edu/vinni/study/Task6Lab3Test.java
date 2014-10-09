@@ -1,10 +1,10 @@
 package edu.vinni.study;
 
-import junit.framework.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 
 /**
@@ -12,10 +12,18 @@ import java.util.List;
  */
 public class Task6Lab3Test {
     @Test
-    public void testMainPath(){
-        List<Integer> ts = new ArrayList<Integer>();
-        for (int i = 3; i < 2000; i *= 2) {
-            Assert.assertEquals(i, Task6Lab3.showGeoProgr(3, 2));
+    public void testMainPath() {
+
+        final int startPoint = 3;
+        final int step = 2;
+        final List<Integer> geoProgr = Task6Lab3.showGeoProgr(startPoint, step);
+        assertEquals(10, geoProgr.size());
+
+        int current = startPoint;
+        for (Integer element : geoProgr) {
+            assertEquals(current, element.intValue());
+            current *= step;
         }
+
     }
 }
