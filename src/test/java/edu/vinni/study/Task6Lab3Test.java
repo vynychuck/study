@@ -15,8 +15,7 @@ public class Task6Lab3Test {
     public void testMainPath(){
         List<Integer> ts = new ArrayList<Integer>();
         for (int i = 3; i < 2000; i *= 2) {
-            ts.add(i);
+            Assert.assertEquals(i, Task6Lab3.showGeoProgr(3, 2));
         }
-        Assert.assertEquals(ts, Task6Lab3.showGeoProgr(3, 2));
     }
 }
