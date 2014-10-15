@@ -1,17 +1,21 @@
 package edu.vinni.study;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by serghii on 10.10.14.
  */
 public class Task14Lab3 {
-    public static int getNumbers(int a) {
+    public static List<Integer> getNumbers(int a) {
+        List<Integer> list = new ArrayList<Integer>();
         int start = 1, end = 1000;
         while (start <= end) {
             if (start % 10 == a) {
-                System.out.println(start);
+                list.add(start);
             }
             start++;
         }
-        return 0;
+        return list;
     }
 }
