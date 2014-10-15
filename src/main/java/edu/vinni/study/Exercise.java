@@ -60,8 +60,7 @@ public class Exercise {
 
     public static List<Double> SumAndAverage(int lowerbound, int upperbound) {
         List<Double> list = new ArrayList<Double>();
-        double sum = 0;
-        double average;
+        double sum = 0, average;
         for (int i = lowerbound; i <= upperbound; ++i) {
             sum += i;
         }
@@ -71,4 +70,81 @@ public class Exercise {
         return list;
     }
 
+    public static List<Double> sumAndAverageWhileDo(int lowerbound, int upperbound) {
+        List<Double> list = new ArrayList<Double>();
+        double sum = 0, average;
+        int i = lowerbound;
+        while (i <= upperbound) {
+            sum += i;
+            i++;
+        }
+        list.add(sum);
+        average = sum / upperbound;
+        list.add(average);
+        return list;
+    }
+
+    public static List<Double> sumAndAverage(int lowerbound, int upperbound) {
+        List<Double> list = new ArrayList<Double>();
+        double sum = 0, average;
+        double count = 0.0;
+        for (int i = lowerbound; i <= upperbound; i++) {
+            sum += i;
+            count++;
+        }
+        list.add(sum);
+        average = sum / upperbound;
+        list.add(average);
+        list.add(count);
+        return list;
+    }
+
+    public static List<Integer> sumAndAverageOdd(int lowerbound, int upperbound) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        int sum = 0, average;
+        for (int i = lowerbound; i <= upperbound; i++) {
+            if (i % 2 != 0) {
+                sum += i;
+            }
+        }
+        list.add(sum);
+        average = sum / upperbound;
+        list.add(average);
+        return list;
+    }
+
+    public static List<Integer> sumAndAverageOdd7(int lowerbound, int upperbound) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        int sum = 0, average;
+        for (int i = lowerbound; i <= upperbound; i++) {
+            if (i % 7 == 0) {
+                sum += i;
+            }
+        }
+        list.add(sum);
+        average = sum / upperbound;
+        list.add(average);
+        return list;
+    }
+
+    public static List<Integer> sumAndAverageSquares(int lowerbound, int upperbound) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        int sum = 0, average;
+        for (int i = lowerbound; i <= upperbound; i++) {
+            sum += i * i;
+        }
+        list.add(sum);
+        average = sum / upperbound;
+        list.add(average);
+        return list;
+    }
+
+    public static int getProduct(int upperbound) {
+        int product = 1;
+        for (int i = product; i <= upperbound; i++) {
+            product *= i;
+        }
+        return product;
+    }
 }
+
