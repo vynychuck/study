@@ -14,7 +14,7 @@ public class Task14Lab3 {
             if (start % 10 == a) {
                 list.add(start);
             }
-            start++;
+            start+=10;
         }
         return list;
     }
