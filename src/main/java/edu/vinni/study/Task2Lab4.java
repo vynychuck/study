@@ -6,7 +6,7 @@ package edu.vinni.study;
 public class Task2Lab4 {
     public static void getNumbers(int a){
         int x = 300;
-        for(int i = 1; i < 300; i++){
+        for(int i = a; i < 300; i+=a){
             if (i % a == 0){
                 System.out.println(i);
             }
